@@ -31,7 +31,7 @@ var question_obj = [
 
   {
     question: "What Is My Favourite Food?\n",
-    answer: "Idli Sambhar",
+    answer: "Chicken Biryani",
   },
 
   {
@@ -65,13 +65,11 @@ for (var i = 0; i < question_obj.length; i++) {
   PlayGame(question_obj[i].question, question_obj[i].answer);
 }
 
-console.log(
-  "Your Final Score Is " + score + "\n Thank You For Taking The Quiz"
-);
+console.log( "Your Final Score Is " + score + "\n Thank You For Taking The Quiz");
 
 if (score === 50) {
   console.log("You Know Puru Very Well");
 }
 if (score < 0) {
-  console.log("Sorry");
+  console.log("Sorry..retry");
 }
